@@ -2,7 +2,9 @@
 import React, { useState, useEffect } from "react";
 
 //path
-import { useUpload } from "../../utilities/runtime-helpers";
+import { useUpload } from "../../../utilities/runtime-helpers";
+
+//import { useUpload } from "../../utilities/runtime-helpers";
 
 // Rest of your component code
 function MainComponent() {
