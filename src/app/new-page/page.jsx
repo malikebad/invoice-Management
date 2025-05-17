@@ -1,8 +1,10 @@
 "use client";
-import React from "react";
+import React, { useState, useEffect } from "react";
 
-import { useUpload } from "../utilities/runtime-helpers";
+//path
+import { useUpload } from "../../utilities/runtime-helpers";
 
+// Rest of your component code
 function MainComponent() {
   const [companyName, setCompanyName] = useState("");
   const [companyLogo, setCompanyLogo] = useState("");
@@ -20,6 +22,8 @@ function MainComponent() {
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
   const [upload] = useUpload();
+
+  // ...everything else remains unchanged
 
   // Load saved invoices on mount
   useEffect(() => {
